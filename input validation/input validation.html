@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact @Bosscoder</title>
+  <link rel="stylesheet" href="./input validation.css">
+</head>
+<body>
+  <form action="#" method="post">
+    <h2>Contact @Bosscoder</h2>
+    <label for="name">Name:</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Your name"
+      required
+      maxlength="50"
+      title="Name is required. Maximum 50 characters allowed."
+    />
+
+    <label for="email">Email:</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Your email"
+      required
+      title="Please enter a valid email address."
+    />
+    <label for="phone">Phone Number:</label>
+    <input
+      type="tel"
+      id="phone"
+      name="phone"
+      placeholder="Your phone number"
+      required
+      pattern="[0-9]{10}"
+      maxlength="10"
+      title="Please enter a valid 10-digit phone number."
+    />
+    <label for="message">Message:</label>
+    <textarea
+      id="message"
+      name="message"
+      placeholder="Write your message here..."
+      required
+      maxlength="300"
+      title="Please write a message (maximum 300 characters)."
+      rows="4"
+    ></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</body>
+</html>
