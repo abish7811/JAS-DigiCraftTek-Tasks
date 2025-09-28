@@ -211,13 +211,7 @@
             window.editTask = editTask;
             window.deleteTask = deleteTask;
             
-            // Initialize with some sample tasks
-            // tasks = [
-            //     { id: taskId++, text: 'Complete project proposal', completed: false, selected: false },
-            //     { id: taskId++, text: 'Buy groceries', completed: false, selected: false },
-            //     { id: taskId++, text: 'Call dentist', completed: false, selected: false },
-            //     { id: taskId++, text: 'Pay electricity bill', completed: false, selected: false }
-            // ];
+            eee
             
             renderTasks();
             updateTaskCount();
