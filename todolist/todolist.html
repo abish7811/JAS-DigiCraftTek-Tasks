@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo List with Select All</title>
+    <title>My Todo List</title>
     <link rel="stylesheet" href="./todolist.css">
 </head>
-
 <body>
-    <div class="todo-app">
-        <div class="hstyle">
-            <h2>My Todo List</h2>
-            <p class="fname"><a href="#">Abish.R</a></p>
-
+    <div class="container">
+        <div class="header">
+            <h1>My Todo List</h1>
+            <p>Abish.R</p>
         </div>
-
+        
         <div class="input-section">
-            <input type="text" id="todo-input" placeholder="Add a new task...">
-            <button id="add-btn">Add</button>
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <button id="addBtn">Add</button>
         </div>
-        <div class="select-all-controls">
-            <label for="select-all">
-                <input type="checkbox" id="select-all">
-                <span>Select All</span>
-            </label>
-            <button id="delete-selected">Delete Selected</button>
+        
+        <div class="controls">
+            <div class="controls-left">
+                <label>
+                    <input type="checkbox" id="selectAll">
+                    Select All
+                </label>
+            </div>
+            <button class="delete-all-btn" id="deleteAllBtn">Delete Selected</button>
         </div>
-        <ul id="todo-list">
-
-        </ul>
-        <div class="footer">You have <span id="count">0</span> pending tasks</div>
+        
+        <div class="task-list" id="taskList">
+            <!-- Tasks will be added here dynamically -->
+        </div>
+        
+        <div class="footer">
+            <p class="task-count" id="taskCount">You have 0 pending tasks</p>
+        </div>
     </div>
-<script src="./todolist.js"></script>
+
+    <script src="./todolist.js">
+       
+    </script>
 </body>
 </html>
